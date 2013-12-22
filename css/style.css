@@ -1,0 +1,589 @@
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin Regular'), local('Cabin-Regular'), url(http://themes.googleusercontent.com/static/fonts/cabin/v4/JEgmtEDzc-IH8jBshQXrYA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cabin Bold'), local('Cabin-Bold'), url(http://themes.googleusercontent.com/static/fonts/cabin/v4/haOjnueK8Or1ztuuRtr8dvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cabin';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Cabin Italic'), local('Cabin-Italic'), url(http://themes.googleusercontent.com/static/fonts/cabin/v4/jZSwn9gMgsQpyndNljYDIw.woff) format('woff');
+}
+@font-face {
+    font-family: 'FlatCV'; 
+    src: url('FlatCV.eot#iefix') format('embedded-opentype'),
+    	 url('FlatCV.woff') format('woff'),
+   		 url('FlatCV.ttf') format('truetype');
+   		 font-weight: normal;
+   		 font-style: normal;
+}	
+
+
+body
+{
+	margin: 0;
+	background-color: #09193f;
+}
+.cadre
+{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	background-color: white;
+}
+
+header
+{
+	width: 450px;
+	height: 150px;
+	background-color: #16a5d7;
+	float: left;
+	cursor: pointer;
+}
+	header img
+	{
+		width: 150px;
+		height: 150px;
+		float: left;
+	}
+	header .name
+	{
+		width: 260px;
+		padding: 20px;
+		color: #fff;
+		font-family: 'Cabin', sans-serif;
+		float: left;
+	}
+	header h1
+	{
+		margin: 0;
+		margin-bottom: 5px;
+		padding: 0;
+		line-height: 1em;
+		font-weight: 700;
+		font-size: 40px;
+		text-transform: uppercase;
+	}
+	header .spec
+	{
+		margin: 0;
+		margin-bottom: 5px;
+		padding: 0;
+		line-height: 1em;
+		font-size: 16px;
+		text-transform: uppercase;
+	}
+
+	.menu
+	{
+		margin: 0;
+		padding: 0;
+		float: left;
+		cursor: pointer;
+                list-style: none;
+	}
+	.menu li
+	{
+		position: relative;
+		width: 150px;
+		height: 150px;
+		color: white;
+		display: inline-block;
+		float: left;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+	}
+		.menu .profile
+		{
+			background-color: #50c0e9;
+		}
+		.menu .profile:hover
+		{
+			background-color: white;
+			color: #ccc;
+		}
+		.menu .portfolio
+		{
+			background-color: #a8d324;
+		}
+		.menu .portfolio:hover
+		{
+			background-color: white;
+			color: #ccc;
+		}
+		.menu .contacts
+		{
+			background-color: #7caf00;
+		}
+		.menu .contacts:hover
+		{
+			background-color: white;
+			color: #ccc;
+		}
+			.menu span
+			{
+				font-size: 100px;
+				line-height: 100px;
+				display: block;
+				position: absolute;
+				top: 26px;
+				left: 47px;
+				overflow: hidden;
+				font-weight: normal;
+				font-family: "FlatCV";
+			}
+	#principale
+	{
+		width: 100%;
+		max-height: 300px;
+		overflow: hidden;
+		-webkit-transition: max-height 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
+		-ms-transition: all 0.5s;
+	}
+
+		#home
+		{
+			width: 100%;
+		}
+			.presentation
+			{
+				width: 500px;
+				height: 240px;
+				margin: 0;
+				padding: 30 50;
+				float: left;
+			}
+				.userDescription
+				{
+					margin-bottom: 30px;
+					font-family: 'Cabin', sans-serif;
+					font-size: 22px;
+					color: #666;
+					text-align: center;
+					display: inline-block;
+				}
+				.details
+				{
+					width: 100%;
+					display: inline-block;
+					text-align: center;
+					color: #50c0e9;
+					font-family: 'Cabin', sans-serif;
+				}
+					.details .icon
+					{
+						width: 50px;
+						height: 50px;
+						margin-left: auto;
+						margin-right: auto;
+						border-radius: 100%;
+						background-color: #50c0e9;
+						color: white;
+						font-size: 60px;
+						line-height: 50px;
+						font-weight: normal;
+						font-family: "FlatCV";
+						text-align: center;
+						display: block;
+						overflow: hidden;
+					}
+					.details .phone
+					{
+						font-size: 36px;
+						line-height: 44px;
+					}
+					.details .email
+					{
+						font-size: 16px;
+						line-height: 44px;
+					}
+					.details .separator
+					{
+						width: 50px;
+						height: 1px;
+						margin-left: auto;
+						margin-right: auto;
+						background-color: #ccc;
+					}
+			.reseaux
+			{
+				width: 300px;
+				margin: 0;
+				padding: 0;
+				float: left;
+				cursor: pointer;
+                                list-style: none;
+			}
+				.reseaux li
+				{
+					position: relative;
+					width: 150px;
+					height: 150px;
+					float: left;
+					color: white;
+					-webkit-transition: all 0.5s;
+					-moz-transition: all 0.5s;
+					-o-transition: all 0.5s;
+					-ms-transition: all 0.5s;
+					background-color: black;
+				}
+				.reseaux span
+				{
+					width: 150px;
+					font-size: 100px;
+					line-height: 150px;
+					font-weight: normal;
+					font-family: "FlatCV";
+					text-align: center;
+					display: block;
+					overflow: hidden;
+				}
+				.reseaux .facebook
+				{
+					background-color: #3b5999;
+				}
+				.reseaux .facebook:hover
+				{
+					background-color: white;
+					color: #ccc;
+				}
+				.reseaux .twitter
+				{
+					background-color: #00baff;
+				}
+				.reseaux .twitter:hover
+				{
+					background-color: white;
+					color: #ccc;
+				}
+				.reseaux .gplus
+				{
+					background-color: #cb2028;
+				}
+				.reseaux .gplus:hover
+				{
+					background-color: white;
+					color: #ccc;
+				}
+				.reseaux .in
+				{
+					background-color: #0274b3;
+				}
+				.reseaux .in:hover
+				{
+					background-color: white;
+					color: #ccc;
+				}
+			#resume
+			{
+				width: 100%;
+				overflow-x: hidden;
+				background-color: white;
+				display: none;
+			}
+				#resume .tete
+				{
+					width: 800px;
+					margin: 50px;
+				}
+					#resume .skills .icon
+					{
+						width: 50px;
+						height: 50px;
+						border-radius: 100%;
+						background-color: #497cf0;
+						color: white;
+						font-size: 60px;
+						line-height: 50px;
+						font-weight: normal;
+						font-family: "FlatCV";
+						text-align: center;
+						display: block;
+						overflow: hidden;
+						float: left;
+					}
+					#resume .skills .titre
+					{
+						font-family: 'Cabin', sans-serif;
+						font-size: 22px;
+						font-weight: 700;
+						margin-left: 10px;
+						color: #999;
+						line-height: 50px;
+					}
+					#resume .skills .zone
+					{
+						width: 375px;
+						margin-left: 50px;
+						float: left;
+					}
+						#resume .skills .zone .type
+						{
+							margin-bottom: 16px;
+							font-family: 'Cabin', sans-serif;
+							font-size: 16px;
+							line-height: 20px;
+							font-weight: 700;
+							display: inline-block;
+						}
+						#resume .skills .progress
+						{
+							height: 35px;
+							margin-bottom: 1px;
+							border-radius: 4px;
+							color: white;
+							text-align: center;
+							font-family: 'Cabin', sans-serif;
+							font-size: 16px;
+							line-height: 35px;
+							font-weight: 700;
+							display: inline-block;
+						}
+				#resume .date
+				{
+					padding-right: 15px;
+					padding-left: 50px;
+					margin-top: 20px;
+					margin-right: 15px;
+					font-family: 'Cabin', sans-serif;
+					font-size: 16px;
+					font-weight: 700;
+					border-right: 2px solid #ccc;
+					display: inline-block;
+				}
+				#resume .message
+				{
+					font-family: 'Cabin', sans-serif;
+				}
+			#contact
+			{
+				width: 100%;
+				overflow-x: hidden;
+				display: none;
+			}
+				#contact #googleMap
+				{
+					width: 100%;
+					height: 300px;
+				}
+				#contact .infos
+				{
+					width: 350px;
+					padding: 30px 50px;
+					float: left;
+				}
+				#contact h1
+				{
+					margin: 0px;
+					margin-top: 40px;
+					font-size: 20px;
+				}
+				.contactForm
+				{
+					width: 390px;
+					height: 403px;
+					padding: 30px 30px;
+					background-color: #f9f9f9;
+					float: left;
+				}
+					.contactForm h3
+					{
+						margin: 0;
+						margin-bottom: 24px;
+						font-size: 23px;
+						line-height: 28px;
+						text-transform: uppercase;
+						color: #16a5d7;
+						font-weight: 700;
+						font-family: 'Cabin', sans-serif;
+					}
+					.contactForm label
+					{
+						font-size: 16px;
+						color: #333;
+						line-height: 20px;
+						margin-bottom: 6px;
+						font-weight: 700;
+						font-family: 'Cabin', sans-serif;
+						display: inline-block;
+					}
+					.contactForm input, .contactForm textarea
+					{
+						width: 388px;
+						padding: 10px 8px 10px;
+						margin-bottom: 15px;
+						font-size: 12px;
+						outline: none;
+						resize: none;
+						-webkit-transition: all 0.5s;
+						-moz-transition: all 0.5s;
+						-o-transition: all 0.5s;
+						-ms-transition: all 0.5s;
+					}
+					.contactForm input:valid, .contactForm textarea:valid
+					{
+						border: 2px solid #50c0e9; 
+					}
+					.contactForm input:invalid, .contactForm textarea:invalid
+					{
+						border: 2px solid #ECF0F1; 
+					}
+
+					.button
+					{
+						float: right;
+						background: #7caf00;
+						padding-bottom: 2px;
+						border-radius: 3px;
+						font-size: 16px;
+						text-transform: uppercase;
+						font-weight: 700;
+						color: #fff;
+						vertical-align: top;						
+					}
+						.button span
+						{
+							vertical-align: top;
+							display: inline-block;
+							padding: 8px 14px 9px;
+							background: #a8d324;
+							border-radius: 3px;	
+							font-family: 'Cabin', sans-serif;
+							cursor: pointer;						
+						}
+						.button span:hover
+						{
+							background-color: transparent;
+						}
+
+				#portfolio
+				{
+					width: 100%;
+					display: none;
+				}
+				#portfolio .menuListe
+				{
+					padding: 20px 50px;
+				}
+				#portfolio .menuListe li
+				{
+					padding: 5px 10px;
+					border-radius: 2px;
+					color: #999;
+					font-family: 'Cabin', sans-serif;
+					font-weight: 700;
+					display: inline-block;
+					cursor: pointer;
+					-webkit-transition: all 0.5s;
+					-moz-transition: all 0.5s;
+					-o-transition: all 0.5s;
+					-ms-transition: all 0.5s;
+				}
+				#portfolio .menuListe li:hover
+				{
+					color: #16a5d7;
+				}
+				#portfolio .menuListe .active
+				{
+					background-color: #16a5d7;
+					color: white;
+				}
+				#portfolio .menuListe .active:hover
+				{
+					background-color: #16a5d7;
+					color: white;
+				}
+				#portfolio .projects
+				{
+					padding: 0;
+					margin: 0;
+				}
+				#portfolio .projects li
+				{
+					position: relative;
+					width: 300px;
+					height: 200px;
+					display: inline-block;
+					float: left;
+				}
+				#portfolio .projects li img
+				{
+					position: absolute;
+					width: 100%;
+					height: 100%;
+				}
+					#portfolio .projects li .blueCadre
+					{
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						background-color: #09193f;
+						background-image: url("../medias/magnify.png");
+						background-size: 30px;
+						background-position: center;
+						background-repeat: no-repeat;
+						opacity: 0;
+						-webkit-transition: all 0.5s;
+						-moz-transition: all 0.5s;
+						-o-transition: all 0.5s;
+						-ms-transition: all 0.5s;
+						cursor: pointer;
+					}
+					#portfolio .projects li .blueCadre:hover
+					{
+						opacity: 0.9;
+					}
+					#portfolio .projects li .title
+					{
+						padding-left: 25px;
+						padding-top: 30px;
+						font-size: 16px;
+						font-family: 'Cabin', sans-serif;
+						line-height: 20px;
+						color: white;
+						display: block;
+					}
+					#portfolio .projects li .type
+					{
+						padding-left: 30px;
+						padding-top: 2px;
+						font-family: 'Cabin', sans-serif;
+						font-size: 12px;
+						font-weight: 700;
+						text-transform: uppercase;
+						line-height: 15px;
+						color: #7caf00;
+						display: block;
+					}
+.clear
+{
+	clear: both;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+	
